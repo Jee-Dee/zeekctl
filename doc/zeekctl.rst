@@ -265,7 +265,7 @@ name of a directory where any such unarchived logs can be found.
 Log expiration and Log retention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``LogExpireMinutes`` and ``LogExpireDelay`` options in ``zeekctl.conf`` can configure ``zeekctl`` to only retain certain amounts of archived logs.
+The LogExpireMinutes_ and LogExpireInterval_ options in ``zeekctl.conf`` can configure ``zeekctl`` to only retain certain amounts of archived logs.
 
     # Check "Option Reference" section for more info
 
@@ -275,7 +275,7 @@ The ``LogExpireMinutes`` and ``LogExpireDelay`` options in ``zeekctl.conf`` can 
         Time interval that archived log files are kept (a value of 0 means log files never expire).
         The time interval is expressed as an integer followed by one of the following time units: day, hr, min.
 
-This functionality uses `zeekctl cron <#zeekcontrol-cron-command>`_ so note that you need to edit the ``crontab`` to let ``zeekctl cron`` work properly, see proper section for details. 
+This functionality uses `zeekctl cron <#zeekcontrol-cron-command>`_ so note that you need to edit the ``crontab`` to let ``zeekctl cron`` work properly, check dedicated section for details
 
 
 Log files created only when using ZeekControl
